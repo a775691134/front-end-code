@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+		<title>银行家算法</title>
+		<link rel="stylesheet" href="bower_components/jquery/dist/jquery.js">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	</head>
+	<body>
+		<div class="row">
+			<div id='header' class="col-md-12">
+				<h2 class="text-center">银行家算法</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				请输入进程的数目：
+				<input type="text" id='inPCount' />
+				最大数量为8
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				请输入资源种类数：
+				<input type="text" id='inSCount' />
+				最大数量为4
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<p>请输入每个进程需要的资源数目，资源数目中间用“.”分隔</p>
+				<div id="insun"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<p>请输入每个进程已经分配的资源数目，资源数目中间用“.”分隔</p>
+				<div id="inkm"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<p>请输入进程所请求的各个资源的数量</p>
+				<input id='resave' type="text" />
+				<p>请输入剩余资源的数量</p>
+				<input id='request' type="text" />
+				<input type="button" id='button1' class='button' value='确定' />
+			</div>
+		</div>
+		<script src='yinhang.js'></script>
+	</body>
+</html>
